@@ -1,8 +1,8 @@
-const { default: mongoose } = require("mongoose");
+const { mongoose } = require("mongoose");
 
 
 
-const ShipmentSchema = new mongoose.Schema({
+const Shipment = new mongoose.Schema({
     shipmentNumber: {
         type: String,
         required: true,
@@ -48,4 +48,4 @@ const ShipmentSchema = new mongoose.Schema({
     }
 }, { timestamps: true });
 
-module.exports = mongoose.model('Shipment', ShipmentSchema);
+module.exports = mongoose.model('Shipment', Shipment);
